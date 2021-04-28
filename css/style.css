@@ -8,7 +8,13 @@ body, html{
 #header{
 	width: 100%;
 	background: transparent;
-	transition: backgrand ease-out 0.2s;
+	transition: ease-out 0.2s;
+}
+#header.active {
+	position: fixed;
+	background-color: rgb(255, 255, 255);
+	box-shadow:0 0 30px 0 rgba(0,0,0,0.12);
+	z-index: 9999;
 }
 
 #header .auto{
@@ -31,7 +37,7 @@ width: auto;
 }
 
 #cards a.destaque{
-	display: block;
+	display: block;	
 	background: var(--grey-light);
 	border-radius: 5px;
 	text-align: center;
@@ -49,6 +55,22 @@ width: auto;
 }
 #cards p{
  color:var (--black);
+}
+
+
+#cards a.destaque .img-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 200px;
+}
+#cards a.destaque .img-container img{
+	max-height: 160px;
+}
+#rodape{
+	text-align: center;
+	background: var(--grey);
+	
 }
 
 
